@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
+import { BmiComponent } from './bmi/bmi.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TemperatureConverterComponent,
+    BmiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

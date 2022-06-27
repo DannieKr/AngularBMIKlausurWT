@@ -1,0 +1,12 @@
+<div class="bmi-calculator">
+  <div class="input-height">
+    <span>Gib Größe ein: </span>
+    <input type="number" [(ngModel)]="height">
+    <span>Gib Gewicht ein: </span>
+    <input type="number" [(ngModel)]="weight">
+    <button (click)="calculateBmi()">BMI ausrechnen</button>
+  </div>
+  <div class="result">
+    <span>BMI: {{ getBmi()  }}  </span>
+  </div>
+</div>
